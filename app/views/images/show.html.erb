@@ -2,7 +2,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @image.user_id %>
+  <%= @image.user.email %>
 </p>
 
 <p>
@@ -14,5 +14,4 @@
   <%= @image.file_file_name %>
 </p>
 
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<%= link_to 'Destroy', @image, method: :delete, data: { confirm: 'Are you sure?' } %>
