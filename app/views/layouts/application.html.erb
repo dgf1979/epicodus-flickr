@@ -15,6 +15,7 @@
             </div>
             <div class="navbar">
                 <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/">User Galleries</a> </li>
                   <% if user_signed_in? %>
                     <li><%= link_to 'Upload', new_image_path %></li>
                   <% end %>

@@ -1,1 +1,2 @@
-<%= render "layouts/gallery", object: @images %>  
+<%= content_for :gallery_title do %> All Uploaded Images <% end %>
+<%= render "layouts/gallery", object: @images %>

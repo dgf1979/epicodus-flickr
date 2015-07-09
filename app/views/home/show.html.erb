@@ -1,0 +1,2 @@
+<%= content_for :gallery_title do %> <%= @user.email %>'s Uploaded Images <% end %>
+<%= render "layouts/gallery", object: @user.images %>

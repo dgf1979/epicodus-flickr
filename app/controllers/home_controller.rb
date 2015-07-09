@@ -5,4 +5,8 @@ class HomeController < ApplicationController
       @images.push(user.images.first)
     end
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
 end

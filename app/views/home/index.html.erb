@@ -1,1 +1,15 @@
+
+<%= content_for :gallery_title do %> Browse User Galleries <% end %>
 <%= render "layouts/gallery", object: @images %>
+
+<script charset="utf-8">
+  $(document).ready(function() {
+    console.log("ready");
+    $(".thumbnail").each(function() {
+      var user_email = $(this).attr("data-author");
+      console.log(user_email);
+      $(this).append('<div style="width: 100%; text-align: center;" class="image-note">' + user_email + '</div>');
+    });
+
+  });
+</script>
