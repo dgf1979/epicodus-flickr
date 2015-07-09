@@ -17,3 +17,13 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+html {
+  width: 100%
+}
+
+body {
+  background: linear-gradient(white, #222222, black);
+  width: 100%;
+  min-height: 1000px;
+}

@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
-
+    @images = []
+    User.all.each do |user|
+      @images.push(user.images.first)
+    end
   end
 end
