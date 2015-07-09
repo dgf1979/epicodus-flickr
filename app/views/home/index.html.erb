@@ -1,1 +1,9 @@
 <h1>Landing Page</h1>
+
+<% @users.each do |user| %>
+  <p>
+    <%= image_tag(user.images.first.file.url(:thumb)) %>
+    <%= user.email %>
+    <hr>
+  </p>
+<% end %>
